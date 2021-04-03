@@ -6,13 +6,13 @@ echo 'Dist file building is now complete'
 # when script doesnt work
 # git push origin `git subtree split --prefix dist master`:gh-pages --force
 while true; do
-    read -p "Would you like to deploy the code to the master branch:  `echo $'\n> '`" yn
+    read -p "Would you like to deploy the code to the gh-pages branch:  `echo $'\n> '`" yn
     case $yn in
         [Yy]* )
           git add -A
           git commit -m 'deploying latest code to develop'
           git push
-          git push origin `git subtree split --prefix dist master`:gh-pages --force
+          git subtree push --prefix dist origin gh-pages;
           break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
