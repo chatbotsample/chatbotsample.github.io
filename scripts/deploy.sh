@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Script for deploying code to master'
-npm run build
+#npm run build
 echo 'Dist file building is now complete'
 # deplying to gh pages
 # when script doesnt work
@@ -13,6 +13,7 @@ while true; do
           git commit -m 'deploying latest code to develop'
           git push
           git subtree push --prefix dist origin gh-pages;
+
           break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
