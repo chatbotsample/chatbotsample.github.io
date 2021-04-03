@@ -9,8 +9,8 @@ Licence URI: https://www.os-templates.com/template-terms
 File: Layout CSS
 */
 
-@import url("fontawesome-free/css/fontawesome-all.min.css");
-@import url("framework.css");
+@import url("../../../assets/fontawesome-free/css/fontawesome-all.min.css");
+@import url("../../../assets/framework.css");
 
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
