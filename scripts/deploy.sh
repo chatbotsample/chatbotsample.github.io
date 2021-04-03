@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Script for deploying code to master'
-#npm run build
+npm run build
 echo 'Dist file building is now complete'
 # deplying to gh pages
 # when script doesnt work
