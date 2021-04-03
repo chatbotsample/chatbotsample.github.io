@@ -12,8 +12,8 @@ while true; do
           git add -A
           git commit -m 'deploying latest code to develop'
           git push
-          git subtree push --prefix dist origin gh-pages;
-
+          #git subtree push --prefix dist origin gh-pages;
+          git push origin `git subtree split --prefix dist develop`:gh-pages --force
           break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
